@@ -1,0 +1,66 @@
+{
+  "name": "chrome-extension-skeleton-angular-webpack",
+  "version": "1.0.0",
+  "description": "A skeleton for an extension with the most essential pieces including AngularJS. Packaged using Webpack.",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development babel-node ./dev-env/dev.js",
+    "build": "cross-env NODE_ENV=production babel-node ./dev-env/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andefred/chrome-extension-skeleton-angular-webpack.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "skeleton",
+    "angularjs",
+    "webpack"
+  ],
+  "author": "Anders Fredriksson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andefred/chrome-extension-skeleton-angular-webpack/issues"
+  },
+  "homepage": "https://github.com/andefred/chrome-extension-skeleton-angular-webpack#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "chokidar": "^1.6.0",
+    "cli-color": "^1.1.0",
+    "cross-env": "^1.0.8",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "file-loader": "^0.9.0",
+    "fs-extra": "^0.30.0",
+    "json-loader": "^0.5.4",
+    "lodash": "^4.13.1",
+    "ng-annotate-loader": "^0.1.0",
+    "node-sass": "^3.8.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+      "@angular/common": "~2.2.0",
+    "@angular/compiler": "~2.2.0",
+    "@angular/core": "~2.2.0",
+    "@angular/forms": "~2.2.0",
+    "@angular/http": "~2.2.0",
+    "@angular/platform-browser": "~2.2.0",
+    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/router": "~3.2.0",
+    "@angular/upgrade": "~2.2.0",
+    "angular-in-memory-web-api": "~0.1.15",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.25"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "chrome-extension-skeleton-angular-webpack",
+  "version": "1.0.0",
+  "homepage_url": "https://github.com/andefred/chrome-extension-skeleton-angular-webpack",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content/index.js"
+      ]
+    }
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background/index.js"
+    ]
+  },
+  "page_action": {
+    "default_title": "Webpack chrome extension popup action",
+    "default_popup": "popup/index.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab/index.html"
+  },
+  "permissions": [
+    "background",
+    "tabs"
+  ],
+  "icons": {
+    "16": "$assets/webpack-16.png",
+    "32": "$assets/webpack-32.png",
+    "128": "$assets/webpack-128.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://localhost:3001; object-src 'self'; ",
+  "description": "A skeleton for an extension with the most essential pieces including AngularJS. Packaged using Webpack."
+}
